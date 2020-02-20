@@ -24,7 +24,7 @@
 int main(int argc, char * argv[])
 {
     std::string type = "mxnet";
-    std::string fpath = "test.jpg";
+    std::string fpath = "/Users/jht/github/mxnet-mtcnn/mayun.jpg";
     std::string model_dir = "../models"; 
     std::string out_dir = "../outputs";    
        

@@ -10,6 +10,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS}
 
 # library目录及name名称
 link_directories(${PROJECT_SOURCE_DIR}/3rdparty/lib)
+link_directories(/Users/jht/Downloads/mxnet/build)
 
 list(APPEND FACE_DETECT_LINKER_LIBS mxnet)
 

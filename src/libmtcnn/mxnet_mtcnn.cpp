@@ -77,7 +77,7 @@ MxNetMtcnn::~MxNetMtcnn(void)
 
 void MxNetMtcnn::LoadPNet(int h, int w)
 {
-	std::string param_file= model_dir_+"/det1-0001.params";
+	std::string param_file= model_dir_+"/det1-0000.params";
 	std::string json_file=model_dir_+"/det1-symbol.json";
 
 	PNet_=LoadMxNetModule(param_file,json_file,1,3,h,w);
@@ -349,7 +349,7 @@ void MxNetMtcnn::CopyOnePatch(const cv::Mat& img,face_box&input_box,float * data
 
 PredictorHandle MxNetMtcnn::LoadRNet(int batch)
 {
-	std::string param_file= model_dir_+"/det2-0001.params";
+	std::string param_file= model_dir_+"/det2-0000.params";
 	std::string json_file=model_dir_+"/det2-symbol.json";
 
 	return LoadMxNetModule(param_file,json_file,batch,3,24,24);
@@ -358,7 +358,7 @@ PredictorHandle MxNetMtcnn::LoadRNet(int batch)
 
 PredictorHandle MxNetMtcnn::LoadONet(int batch)
 {
-	std::string param_file= model_dir_+"/det3-0001.params";
+	std::string param_file= model_dir_+"/det3-0000.params";
 	std::string json_file=model_dir_+"/det3-symbol.json";
 
 	return LoadMxNetModule(param_file,json_file,batch,3,48,48);
